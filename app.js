@@ -3,7 +3,7 @@ const fs=require('fs');
 const os=require('os');
 const _=require('lodash');
 const yargs=require('yargs');
-const notes=require('./notes.js');
+const posts=require('./post.js');
 
 var filteredArray= _.uniq(['Mike','MIB',1,2,3,4,1,2,3,5])
 
@@ -18,14 +18,14 @@ console.log(os.userInfo());
 
 var command= process.argv[2];
 if (command==='add'){
-  notes.addNote(args.title,args.body);
+  posts.addPost(args.title,args.body);
 }
 else if (command==="list"){
-   notes.getAll();
+   posts.getAll();
 }
 else if(command==="remove"){
 
-notes.removeNotes(args.title);
+posts.removeNotes(args.title);
 
 }
 //fs.appendFileSync('greatings.txt','\n Hello Sulimaan');
