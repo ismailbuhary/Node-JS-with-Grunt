@@ -13,7 +13,8 @@ return JSON.parse(poststr);
 
 };
 
-var savePost =() =>{
+var savePost =(posts) =>{
+fs.writeFileSync('post-data.json',JSON.stringify(posts));
 
 };
 
@@ -35,9 +36,10 @@ var dupPost= posts.filter((post) =>{
 if(dupPost.length===0){
 
  posts.push(post);
-  fs.writeFileSync('post-data.json',JSON.stringify(posts));
-
+  savePost(posts);
+  return post;
 }
+
 };
 
 
@@ -46,14 +48,27 @@ var getAll =()=>{
   console.log("get All posts");
 };
 
-var remove =(title)=>{
+var removePost =(title)=>{
 
-  console.log("removing",title);
+  var posts =fetchPost();
+var filterPosts = posts.filter((post)=> post.title!== title);
+savePost(filterPosts);
+return filterPosts.length !== posts.length;
+
+};
+
+var readPost =(title)=>{
+var posts=fetchPost();
+var filterPosts = posts.filter((post)=> post.title===title);
+
+return filterPosts[0];
+
 };
 
 module.exports ={
   getAll,
   addPost,
-  remove
+  removePost,
+  readPost
 
 };
