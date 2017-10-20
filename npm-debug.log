@@ -1,0 +1,28 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\mbuhary\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'lodash' ]
+2 info using npm@3.3.12
+3 info using node@v8.7.0
+4 verbose stack Error: Cannot find module 'internal/errors'
+4 verbose stack     at Function.Module._resolveFilename (module.js:527:15)
+4 verbose stack     at Function.Module._load (module.js:476:23)
+4 verbose stack     at Module.require (module.js:568:17)
+4 verbose stack     at require (internal/module.js:11:18)
+4 verbose stack     at evalmachine.<anonymous>:36:16
+4 verbose stack     at Object.<anonymous> (C:\Users\mbuhary\AppData\Roaming\npm\node_modules\npm\node_modules\cmd-shim\node_modules\graceful-fs\fs.js:11:1)
+4 verbose stack     at Module._compile (module.js:624:30)
+4 verbose stack     at Object.Module._extensions..js (module.js:635:10)
+4 verbose stack     at Module.load (module.js:545:32)
+4 verbose stack     at tryModuleLoad (module.js:508:12)
+5 verbose cwd C:\Users\mbuhary\Desktop\weatherApp
+6 error Windows_NT 10.0.15063
+7 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\mbuhary\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "lodash"
+8 error node v8.7.0
+9 error npm  v3.3.12
+10 error code MODULE_NOT_FOUND
+11 error Cannot find module 'internal/errors'
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]

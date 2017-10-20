@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Google Weather Data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ismailbuhary/PostMan.git"
+  },
+  "author": "Ismail Buhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismailbuhary/PostMan/issues"
+  },
+  "homepage": "https://github.com/ismailbuhary/PostMan#readme",
+  "dependencies": {
+    "darksky": "^0.1.2",
+    "request": "^2.83.0",
+    "yargs": "^4.8.1"
+  }
+}
